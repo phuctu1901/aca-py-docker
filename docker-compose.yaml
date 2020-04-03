@@ -1,0 +1,24 @@
+version: "3"
+services:
+  email-verifier-agent:
+    environment:
+      ADMIN_PORT: 5000
+      AGENT_PORT: 10000
+      INDY_SEED: "00000000000000000000000000000001"
+      SITE_URL:   https://ab114130.ngrok.io 
+    #   WEBHOOK_URL: http://email-verifier-service:8080/webhooks
+      AGENT_LABEL: BC Email Verifier
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+      - "10000:10000"
+    volumes:
+      - aca-py:/home/indy/.indy_client/wallet
+      - ./data:/home/indy/data
+    command: start -it http 0.0.0.0 10000 -ot http --admin 0.0.0.0 5000 -e    https://ab114130.ngrok.io  --wallet-type indy --seed 000000000000000000000000phuctu97 --genesis-url http://138.197.138.255/genesis --label "Hệ thống quản lý định danh số" --auto-accept-invites --auto-accept-requests --admin-insecure-mode --log-level INFO
+
+volumes:
+    # django:
+    aca-py:

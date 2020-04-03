@@ -1,0 +1,19 @@
+{
+  "connection_id": "854bdd3b-f169-4952-a02f-34acda47d4a2",
+  "proof_request": {
+    "name": "Proof of Education",
+    "version": "1.0",
+    "requested_attributes": {
+      "0_name_uuid": {
+        "name": "name",
+        "restrictions": [
+          {
+            "cred_def_id": "D7XpLN7io59zEDMnkWDGWP:3:CL:6059:demo"
+          }
+        ]
+      }
+    },
+    "requested_predicates": {
+    }
+  }
+}

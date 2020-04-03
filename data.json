@@ -1,0 +1,30 @@
+{
+  "comment": "string",
+  "connection_id": "854bdd3b-f169-4952-a02f-34acda47d4a2",
+  "proof_request": {
+    "name": "Truy vấn địa chỉ cư trú",
+    "requested_predicates": {},
+    "nonce": "1234567890",
+    "requested_attributes": {
+      "additionalProp1": {
+        "restrictions": [
+          {
+            "issuer_did": "D7XpLN7io59zEDMnkWDGWP",
+            "credential_definition_id": "D7XpLN7io59zEDMnkWDGWP:3:CL:6059:demo",
+            "schema_issuer_did": "D7XpLN7io59zEDMnkWDGWP",
+            "cred_def_id": "D7XpLN7io59zEDMnkWDGWP:3:CL:6059:demo",
+            "schema_id": "D7XpLN7io59zEDMnkWDGWP:2:CitizenID:1.0",
+            "schema_version": "1.0",
+            "schema_name": "CitizenID"
+          }
+        ],
+        "non_revoked": {
+          "from_epoch": 1585637690,
+          "to_epoch": 1585637690
+        },
+        "name": "name"
+      }
+    },
+    "version": "1.0"
+  }
+}
